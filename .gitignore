@@ -1,5 +1,7 @@
 target/
-dist/
+dist/*
+!dist/*.jar
+!dist/README.md
 .idea/
 *.iml
 .classpath

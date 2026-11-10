@@ -11,6 +11,15 @@ Blazentenance is built for **Velocity 3.x** proxies with **Paper 1.20.x / 1.21.x
 
 Java 21+ is required.
 
+## Download
+
+The pull request page does not have a jar download button. Get the plugins from the [`dist/`](dist/) folder:
+
+- [Blazentenance-Velocity.jar](dist/Blazentenance-Velocity.jar) — Velocity proxy
+- [Blazentenance-Paper.jar](dist/Blazentenance-Paper.jar) — every Paper backend
+
+On GitHub, open the jar, then click **Download raw file**.
+
 ---
 
 ## 1. How to build with Maven
