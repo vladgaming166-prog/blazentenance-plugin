@@ -1,0 +1,15 @@
+target/
+dist/*
+!dist/*.jar
+!dist/README.md
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.vscode/
+*.log
+dependency-reduced-pom.xml
+.mvn/wrapper/maven-wrapper.jar
+*.swp
+.DS_Store
