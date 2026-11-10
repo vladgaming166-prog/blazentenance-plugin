@@ -1,0 +1,98 @@
+# ==========================================
+#       BLAZENTENANCE CONFIGURATION
+#          BlazeMC Network
+# ==========================================
+# This file is generated automatically on first start.
+# Maintenance state persists across Velocity restarts.
+
+settings:
+  debug: false
+  check-updates: true
+  # AUTO uses Velocity's online-mode. ONLINE always queries Mojang.
+  # OFFLINE generates offline-mode UUIDs for /blazemaintenance add.
+  uuid-mode: AUTO
+
+maintenance:
+  enabled: false
+
+  kick-message:
+    - ""
+    - "&c&lBLAZEMC NETWORK"
+    - ""
+    - "&cServerul BlazeMC Network este în lucru!"
+    - "&7Revenim în curând!"
+    - ""
+    - "&eMulțumim pentru înțelegere!"
+    - ""
+
+  whitelist:
+    enabled: true
+
+  permissions:
+    admin: "blazentenance.admin"
+    bypass: "blazentenance.bypass"
+
+  backend-protection:
+    enabled: true
+    prevent-direct-connections: true
+
+  kick-existing-players:
+    enabled: false
+    exempt-whitelisted: true
+
+  join-title:
+    enabled: true
+    title: "&c&lMAINTENANCE"
+    subtitle: "&7Authorized access only"
+
+  server-list:
+    change-motd: true
+    motd:
+      - "&c&lBLAZEMC NETWORK"
+      - "&7Currently under maintenance"
+    change-version: true
+    version: "&cUnder Maintenance"
+
+storage:
+  type: YAML
+  file: "players.yml"
+
+security:
+  # Shared HMAC secret used between Velocity and Paper.
+  # Leave empty on Velocity to auto-generate, then copy the value
+  # into every Paper backend config.yml. Never share this publicly.
+  shared-secret: ""
+
+messages:
+  prefix: "&8[&cBlazentenance&8] "
+  # AUTO accepts both &-codes and MiniMessage. Use MINIMESSAGE to force MiniMessage.
+  format: AUTO
+
+  enabled: "&aMaintenance mode has been ENABLED!"
+  disabled: "&aMaintenance mode has been DISABLED!"
+
+  already-enabled: "&cMaintenance is already enabled!"
+  already-disabled: "&cMaintenance is already disabled!"
+
+  player-added: "&aPlayer &f{player} &ahas been added to the maintenance whitelist."
+  player-removed: "&aPlayer &f{player} &ahas been removed from the maintenance whitelist."
+
+  player-not-found: "&cPlayer &f{player} &cwas not found."
+  player-already-added: "&cPlayer &f{player} &cis already whitelisted."
+
+  no-permission: "&cYou don't have permission to execute this command!"
+
+  whitelist-empty: "&cThe maintenance whitelist is empty!"
+
+  reload: "&aConfiguration successfully reloaded!"
+
+  usage: "&cUsage: /blazemaintenance <on|off|add|remove|list|status|reload>"
+  invalid-subcommand: "&cUnknown subcommand. Use /blazemaintenance for help."
+  usage-add: "&cUsage: /blazemaintenance add player <playername>"
+  usage-remove: "&cUsage: /blazemaintenance remove player <playername>"
+  resolving-uuid: "&7Resolving UUID for &f{player}&7..."
+  uuid-resolve-failed: "&cCould not resolve UUID for &f{player}&c."
+  invalid-name: "&c'{player}' is not a valid Minecraft username or UUID."
+  status-on: "&cMaintenance is currently &lON"
+  status-off: "&aMaintenance is currently &lOFF"
+  help-header: "&cBlazentenance &7- Network Maintenance"

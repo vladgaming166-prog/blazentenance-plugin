@@ -1,0 +1,36 @@
+# ==========================================
+#    BLAZENTENANCE PAPER CONFIGURATION
+#          BlazeMC Network
+# ==========================================
+# Install this plugin on EVERY Paper backend.
+# Maintenance is still controlled from Velocity.
+# This module blocks direct backend connections.
+
+settings:
+  debug: false
+
+backend-protection:
+  enabled: true
+  prevent-direct-connections: true
+  require-proxy-handshake: true
+  handshake-timeout-seconds: 5
+  # If Velocity modern forwarding is not enabled, refuse all logins.
+  require-velocity-forwarding: true
+
+security:
+  # MUST match security.shared-secret from the Velocity Blazentenance config.
+  # Leave empty to refuse all connections while protection is enabled.
+  shared-secret: ""
+
+messages:
+  prefix: "&8[&cBlazentenance&8] "
+  format: AUTO
+  no-permission: "&cYou don't have permission to execute this command!"
+  reload: "&aPaper configuration successfully reloaded!"
+  status-header: "&cBlazentenance &7- Backend Protection"
+  direct-connection-denied: "&cDirect connections to this backend are not allowed!"
+  handshake-timeout: "&cCould not verify your connection with the Velocity proxy."
+  forwarding-disabled: "&cThis backend requires Velocity modern forwarding."
+  missing-secret: "&cBlazentenance is not configured. Direct access is blocked."
+  unauthorized: "&cServerul BlazeMC Network este în lucru!"
+  proxy-only-command: "&cMaintenance is controlled from the Velocity proxy. Use /blazemaintenance there."

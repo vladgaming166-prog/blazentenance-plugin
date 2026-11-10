@@ -1,0 +1,9 @@
+{
+  "id": "blazentenance",
+  "name": "Blazentenance",
+  "version": "${project.version}",
+  "description": "Network-wide maintenance plugin for the BlazeMC Network. Velocity is the authority for maintenance, whitelist, and connection blocking.",
+  "authors": ["BlazeMC Network"],
+  "main": "net.blazemc.blazentenance.velocity.BlazentenanceVelocity",
+  "url": "https://blazemc.net"
+}

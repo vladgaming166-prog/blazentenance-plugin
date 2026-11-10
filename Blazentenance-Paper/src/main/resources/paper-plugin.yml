@@ -1,0 +1,10 @@
+name: Blazentenance
+version: ${project.version}
+main: net.blazemc.blazentenance.paper.BlazentenancePaper
+api-version: "1.20"
+description: Backend protection module for Blazentenance. Velocity remains the authority for network maintenance.
+authors:
+  - BlazeMC Network
+website: https://blazemc.net
+folia-supported: false
+load: STARTUP

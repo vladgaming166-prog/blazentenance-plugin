@@ -1,0 +1,21 @@
+name: Blazentenance
+version: ${project.version}
+main: net.blazemc.blazentenance.paper.BlazentenancePaper
+api-version: "1.20"
+description: Backend protection module for Blazentenance. Velocity remains the authority for network maintenance.
+author: BlazeMC Network
+website: https://blazemc.net
+folia-supported: false
+load: STARTUP
+commands:
+  blazemaintenance:
+    description: Shows Blazentenance backend protection status.
+    aliases: [blazentenance, bmaint]
+    permission: blazentenance.admin
+permissions:
+  blazentenance.admin:
+    description: Grants access to Blazentenance administrative commands.
+    default: op
+  blazentenance.bypass:
+    description: Allows a player to bypass maintenance on the Velocity proxy.
+    default: false
